@@ -65,7 +65,10 @@ server "192.241.188.42", roles: [:app, :web, :db], :primary => true
 set :deploy_to, "/cap-test"
 
 # avoid asking password
-set :ssh_options, {:forward_agent => true}
+set :ssh_options, {
+	:forward_agent => true,
+	auth_methods: ["publickey"]
+}
 
 #set :pty, true
 
