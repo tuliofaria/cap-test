@@ -2,7 +2,7 @@
 lock '3.4.0'
 
 set :application, 'AvonRepAcquisition'
-set :repository, "http://tuliofaria:fe658fe3ed333df876b113ff74cd18cb0dfd05be@github.com/tuliofaria/cap-test.git"
+set :repository, "https://github.com/tuliofaria/avon_rep_acquisition.git"
 
 
 set :stages, ["staging", "production"]
